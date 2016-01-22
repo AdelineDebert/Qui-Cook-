@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family:'Roboto', sans-serif;
+}
+
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: url('repas_bg.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: -5000;
+}
+
+/*------------------------------------------ Haut du header*/
+#header_top {
+  /*width: 40%;*/
+  display: flex;
+  /*justify-content: flex-end;*/
+}
+#logo {
+width : 150px;
+height: 150px;
+}
+
+.btn_id{
+/*float: right;*/
+justify-content: space-around;
+width: 150px;
+height: 50px;
+margin : 50px;
+align-self: center;
+background-color: rgb(251, 175, 34);
+color: white;
+border-radius: 10px;
+border: 0;
+font-weight: bold;
+}
+
+.btn_id:hover{
+  background-color: rgba(251, 175, 34, 0.8);
+  font-weight: normal;
+}
+
+/*-------------------------------------------Bas du header*/
+
+
+/* ------------------- Bandeau blanc*/
+#presentation{
+  text-align: center;
+  height: 75vh;
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/*------------------- Titre + catch phrase*/
+
+h1{
+  font-size: 5em;
+}
+h1, h3, #whatisit {
+  color: rgb(70, 78, 80);
+  margin: 20px;
+}
+h3{
+  font-size: 3em;
+}
+
+/*------------------- Bouton 'comment ça marche' */
+#whatisit {
+  width: 500px;
+  height: 60px;
+  background-color: rgb(251, 175, 34);
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  border: 0;
+  border-radius: 10px;
+}
+
+#whatisit:hover{
+  background-color: rgba(251, 175, 34, 0.8);
+  font-weight: normal;
+}
+
+/*-----------------------------------------------Formulaire de connexion et d'inscription*/
+
+#connexion, #inscription{
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(70, 78, 80, 0.5);
+  display: none;
+}
+
+#style_form, #style_form2{
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+#form_connexion, #form_inscription{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+#form_connexion input, #form_inscription input{
+  margin: 25px;
+  width: 450px;
+  height: 60px;
+}
+
+.croix{
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+.enregistrer{
+  border-radius: 10px;
+  border: 0;
+  background-color: #7ac2c9;
+}
